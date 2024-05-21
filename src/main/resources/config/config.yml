@@ -1,0 +1,19 @@
+price-per-point: 25000
+version-warning: true
+
+point-names:
+  singular: "Honey Point"
+  plural: "Honey Points"
+
+prefixes:
+  PREFIX_CHECK: "&8[&a✔&8]"
+  PREFIX_CROSS: "&8[&cX&8]"
+
+point-messages:
+  converted: "%PREFIX_CHECK% &7You successfully converted &a$%CONVERTED_MONEY% &7to &e%POINTS% Points&7!"
+  convert-failed:
+    lack-of-funds: "%PREFIX_CROSS% &cYou do not have sufficient funds to convert."
+    # This error is thrown when there is an issue with the Point Wrapper or Economy Wrapper
+    # in the process of removing or giving funds / points.
+    other: "%PREFIX_CROSS% &cAn error occurred! Conversion failed..."
+  convert-cancelled: "%PREFIX_CROSS% &cYour conversion was cancelled."
